@@ -3,6 +3,7 @@ import { React, useEffect, useState } from "react";
 import "./App.css";
 import SearchIcon from "./assets/search.svg";
 import MovieCard from "./components/MovieCard";
+import Footer from "./components/Footer";
 
 const API_URL = "http://www.omdbapi.com/?i=tt3896198&apikey=a2717ed3";
 
@@ -23,7 +24,7 @@ const App = () => {
 
   return (
     <div className="app">
-      <h1>NextMovie</h1>
+      <h1>NextMovies</h1>
       <div className="search">
         <input
           placeholder="Search a movie"
@@ -46,6 +47,7 @@ const App = () => {
           <h2>No Movies found</h2>
         </div>
       )}
+      <Footer />
     </div>
   );
 };
